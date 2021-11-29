@@ -100,19 +100,19 @@
                             <br>
                         <label for="select">Select pizza size</label>
                         <select class="custom-select" id="size">
-                            <option value="small">Small @Ksh.500</option>
-                            <option value="medium">Medium @Ksh.800</option>
-                            <option value="large">Large @Ksh.1050</option>
-                            <option value="mega">Mega @Ksh.1300</option>
+                            <option value="500">Small @Ksh.500</option>
+                            <option value="800">Medium @Ksh.800</option>
+                            <option value="1050">Large @Ksh.1050</option>
+                            <option value="1300">Mega @Ksh.1300</option>
                         </select>
                             <br>
                         <label for="select">Select crust</label>
                         <select class="custom-select" id="crust">
-                            <option value="crispy">Crispy @Ksh.100</option>
-                            <option value="cheese stuffed">Cheese Stuffed @Ksh.150</option>
-                            <option value="flatbread">Flatbread @Ksh.120</option>
-                            <option value="deep dish">Deep Dish @Ksh.150</option>
-                            <option value="glutten-free">Glutten-Free @Ksh.200</option>
+                            <option value="100">Crispy @Ksh.100</option>
+                            <option value="150">Cheese Stuffed @Ksh.150</option>
+                            <option value="120">Flatbread @Ksh.120</option>
+                            <option value="150">Deep Dish @Ksh.150</option>
+                            <option value="200">Glutten-Free @Ksh.200</option>
                         </select>
                             <br>
                         <label>All toppings come at an extra cost of <strong>Ksh.80 each</strong></label>
@@ -139,7 +139,7 @@
                           </div>
                             <br>
                         <label for="number">How many pizzas would you like to order?</label>
-                        <input type="number" class="form-control" placeholder="Enter number" min="1" id="pizzanumber">  
+                        <input type="number" id="pizza-quantity" class="form-control" placeholder="Enter number" min="1" id="pizzanumber">  
             </div>   
         </form><br>
                     <div>
@@ -154,8 +154,14 @@
                     </div> -->
                 </div>
             </div>
+            
         <h1 class="title">Delivery Details</h1>
-        <form class="form-group"></form>
+        <label>Delivery cost is <strong>Ksh.150.</strong> Would you like a delivery?</label><br>
+        <select name="delivery" id="delivery">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <form class="form-group" id="location-form">
             <div class="row">
                 <div class="col-lg-12 col-sm-12">
                     <div class="card p-4 mb-3">                  
@@ -170,7 +176,7 @@
             </div>
         </form>
             <div class="btn mb-3">
-                <button type="submit" class="btn  btn-outline-success">Deliver</button>
+                <button type="submit" class="btn  btn-outline-success" id="deliver">Deliver</button>
             </div>
                     
                  
