@@ -50,9 +50,7 @@ pizzaOrder.prototype.amount = function(){
 };
 
 pizzaOrder.prototype.totalAmount = function(){
-    var totalPrice=[];
-    for (var arrayElement = 0; arrayElement<pizzaOrder.length; arrayElement++){
-        totalPrice += pizzaOrder[arrayElement];
+    let totalPrice = 
     }
     return totalPrice;
 }

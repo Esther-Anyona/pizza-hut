@@ -5,15 +5,87 @@
     height: 600px;
     width: 100%;
 } */
+
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&display=swap" rel="stylesheet");
+
+*{
+    font-family: 'Crimson Pro', serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+/* html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: .8rem;
+
+}
+html::-webkit-scrollbar-track{
+    background: transparent;  
+}
+html::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 5rem; 
+} */
+.header{
+    background: #010103;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: .5rem 7%;
+    border-bottom: .1rem solid rgba(255,255,255,.3);
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    z-index: 1;
+}
+.header .logo img{
+    height: 6rem;
+}
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #bd7927;
+}
+.header .navbar a:hover{
+    color: white;
+    border-bottom: .1rem solid #bd7927;
+    padding-bottom: .5rem;
+}
+
 .logo{
     height: 6rem;
 }
-.header, #order{
+/* .header, #order{
     background-color: black;
-}
-#about,#pizza{
-    background-color: burlywood;
+} */
+#about,#pizza, footer{
+    background-color: #bd7927;
 }
 #order .row{
-    color: burlywood;
+    color: #bd7927;
+    background-color: black;
 }
+.container #ordernow{
+    background-color: black;
+} 
+h4, #title{
+    color: #bd7927;  
+}
+.social{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+

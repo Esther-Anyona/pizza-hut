@@ -73,12 +73,12 @@
         </p>
     </div>
 <!-- Make an order section -->
-<div class="container" id="ordernow">
-    <h1>Order Now</h1>
-    <form class="form-group">
-        <div class="row">
-            <div class="col-md-6 m-4 p-0">
-                <div class="card p-4">
+    <div class="container" id="ordernow">
+        <h1 id="title">Order Now</h1>
+        <form class="form-group">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 m-4 p-0">
+                    <div class="card p-4">
                         <label for="select">Select flavour</label>
                         <select name="" id="">
                             <option value="Chicken Peri-Peri">Chicken Peri-Peri</option>
@@ -90,7 +90,7 @@
                             <option value="BBQ Steak">BBQ Steak</option>
                             <option value="Chicken & Beef">Chicken & Beef</option>
                         </select>
-                        <br>
+                            <br>
                         <label for="select">Select pizza size</label>
                         <select name="" id="">
                             <option value="small">Small @Ksh.500</option>
@@ -98,7 +98,7 @@
                             <option value="large">Large @Ksh.1050</option>
                             <option value="mega">Mega @Ksh.1300</option>
                         </select>
-                        <br>
+                            <br>
                         <label for="select">Select crust</label>
                         <select name="" id="">
                             <option value="crispy">Crispy @Ksh.100</option>
@@ -107,7 +107,7 @@
                             <option value="deep dish">Deep Dish @Ksh.150</option>
                             <option value="glutten-free">Glutten-Free @Ksh.200</option>
                         </select>
-                        <br>
+                            <br>
                         <label for="select">Select preferred topping</label>
                         <select name="" id="">
                             <option value="Pepperoni">Pepperoni @Ksh.100</option>
@@ -118,62 +118,49 @@
                             <option value="Bacon Strips">Bacon Strips @Ksh.120</option>
                             <option value="Sausage">Sausage @Ksh.100</option>
                         </select>
-                        <br>
+                            <br>
                         <label for="number">How many pizzas would you like to order?</label>
-                        <input type="number" class="form-control" placeholder="No.of pizzas" min="1" id="pizzanumber">
-        </div>
-    </form>
-                <div>
-                    <button type="submit" class="btn  btn-outline-success">Checkout</button>
-                </div>
-                <div class="card-text mt-3">
-                    <h4>If you would like your pizza delivered, please enter your details below. Delivery cost is<strong> Ksh. 150.</strong></h4>              
-                </div>
-            </div>
-        </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="card p-4">
-                <form class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" placeholder="Name..." class="form-control">
-                    <label for="number">Phone Number</label>
-                    <input type="number" placeholder="07xxxxx..." class="form-control">
-                    <label for="location">Location</label>
-                    <input type="text" placeholder="Location..." class="form-control">               
-                </form>
-                <br>
-                <div>
-                    <button type="submit" class="btn  btn-outline-success">Deliver</button>
+                        <input type="number" class="form-control" placeholder="Enter number" min="1" id="pizzanumber">     
+        </form><br>
+                    <div>
+                        <button type="submit" class="btn  btn-outline-success">Checkout</button>
+                    </div>
+                    <div class="card-text mt-3">
+                        <h4>If you would like your pizza delivered, please enter your details below. Delivery cost is<strong> Ksh. 150.</strong></h4>              
+                    </div>
                 </div>
             </div>
-        </div>
+    
+            <div class="col-md-6 col-sm-12">
+                <div class="card p-4 mb-5">
+                    <form class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Name..." class="form-control">
+                        <label for="number">Phone Number</label>
+                        <input type="number" placeholder="07xxxxx..." class="form-control">
+                        <label for="location">Location</label>
+                        <input type="text" placeholder="Location..." class="form-control">               
+                    </form>
+                    <br>
+                    <div>
+                        <button type="submit" class="btn  btn-outline-success">Deliver</button>
+                    </div>
+                </div>
+            </div>
+        </div>   
     </div>
-    
-    
-</div>
+<!--Footer & copyright -->
+    <footer>
+        <div class="social">
+            <img src="assets/skype.png" alt="" >
+            <img src="assets/twitter.png" alt="" >
+            <img src="assets/you_tube.png" alt="" >
+        </div>
+        <div class="copyright">
+            <h6><em>CASA DELLA PIZZA &#169 2021</em></h6>
+        </div>
+    </footer>
 
-   <div>
-
-
-
-
-
-
-
-
-
-
-
-   </div> 
-   <div>
-
-
-
-
-
-
-
-   </div>
+   
 </body>
 </html>
