@@ -136,38 +136,31 @@
                     <div>
                         <button type="submit" class="btn  btn-outline-success" id="checkout">Checkout</button>
                     </div><br>
-                    <!-- <div class="summary">
-                        <p>Your total amount is: <span id="total-amount"></span></p>
-                        <h6>Thank you. Please let us know if you are satisfied with the services</h6>
-                    </div>
-                    <div class="card-text mt-3">
-                        <h4>If you would like your pizza delivered, please enter your details below. Delivery cost is<strong> Ksh. 150.</strong></h4>              
-                    </div> -->
                 </div>
             </div>
             
         <h1 class="title">Delivery Details</h1>
         <label>Delivery cost is <strong>Ksh.150.</strong> Would you like a delivery?</label><br>
         <select name="delivery" id="delivery">
-            <option value="Yes">Yes</option>
             <option value="No">No</option>
+            <option value="Yes">Yes</option>
         </select>
         <form class="form-group" id="location-form">
             <div class="row">
                 <div class="col-lg-12 col-sm-12">
                     <div class="card p-4 mb-3">                  
                         <label for="name">Name</label>
-                        <input type="text" placeholder="Name..." class="form-control">
+                        <input type="text" id="name" placeholder="Name..." class="form-control" required>
                         <label for="number">Phone Number</label>
-                        <input type="number" placeholder="07xxxxx..." class="form-control">
+                        <input type="number" id="phone-number" placeholder="07xxxxx..." class="form-control" min.length="10" required>
                         <label for="location">Location</label>
-                        <input type="text" placeholder="Location..." class="form-control">               
+                        <input type="text" id="address" placeholder="Location..." class="form-control" required>               
                     </div>
                 </div>
             </div>
         </form>
             <div class="btn mb-3">
-                <button type="submit" class="btn  btn-outline-success" id="deliver">Deliver</button>
+                <button type="submit" class="btn  btn-outline-success" id="deliver">Order</button>
             </div>
                     
                  

@@ -6,7 +6,7 @@ $(document).ready(function(){
         var toppings = $('input[type=checkbox]').filter(':checked');
         var totalToppings = toppings.length;
         var total = parseInt(size) + parseInt(crust) + (parseInt(totalToppings)*80);
-        // alert(total);
+        alert(total);
         localStorage.setItem('total', total);
     });
 
@@ -38,11 +38,15 @@ $(document).ready(function(){
         var totalQuantity = parseInt(localStorage.getItem('quantity'));
         var totalAmount = parseInt(localStorage.getItem('total'));
         var totalDelivery = parseInt(localStorage.getItem('deliveryCost'));
+        var name = $('#name').val();
+        var address = $('#address').val();
+        // if (name=="" || address=="")
+        // alert("Please fill delivery details!")
         if (totalDelivery){
             var totalPrice = (totalAmount * totalQuantity) + totalDelivery;
         } else {
         var totalPrice = (totalAmount * totalQuantity) + totalDelivery ;
         }
-        alert(totalPrice);
+        alert("Your order total is " + totalPrice + " and it will be delivered in an hour's time. Thank you!");
     });
 });
