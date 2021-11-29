@@ -1,3 +1,6 @@
+$(document).ready(function(){
+    $('.summary').hide();
+});
 class pizzaOrder{
     constructor(flavour, size, crust, topping, cost){
     this.flavour = flavour;
