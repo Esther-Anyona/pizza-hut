@@ -7,7 +7,6 @@
     box-sizing: border-box;
     outline: none;border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: .2s linear;
 }
 
@@ -16,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    padding: .5rem 7%;
+    padding: .5rem 4%;
     border-bottom: .1rem solid rgba(255,255,255,.3);
     position: sticky;
     top: 0; left: 0; right: 0;
@@ -33,12 +32,19 @@
     border-bottom: .1rem solid #bd7927;
     padding-bottom: .5rem;
 }
+h1,h3,p{
+    text-align: center;
+}
 
 .logo{
     height: 4rem;
 }
 em{
     color: blue;
+}
+.display{
+    border-radius: 25%;
+    margin-left: 3rem;
 }
 #about,#pizza, footer{
     background-color: #bd7927;
@@ -50,7 +56,7 @@ em{
 .container #ordernow{
     background-color: black;
 } 
-h4, #title{
+h4, .title{
     color: #bd7927;  
 }
 .social{

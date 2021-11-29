@@ -40,8 +40,6 @@
                 </div>
             </div>
         </nav>
-
-
     </header>
     
 
@@ -58,30 +56,30 @@
     </div>
 
     <!-- Our Pizza Section -->
-    <div class="container-fluid" id="pizza">
+    <div class="container-fluid"  id="pizza">
         <h1 >Our Pizza</h1>
         <h3><em>Cheesed to perfection!</em></h3>
         <div class="row">
             <div class="col">
-                <img src="assets/cheese3.jpg" alt="" srcset="">
+                <img class="display" src="assets/cheese3.jpg" alt="" srcset="">
             </div>
             <div class="col">
-                <img src="assets/cheese2.jpg" alt="" srcset="">
+                <img class="display" src="assets/cheese2.jpg" alt="" srcset="">
             </div>
             <div class="col">
-                <img src="assets/cheese1.jpg" alt="" srcset="">
+                <img class="display" src="assets/cheese1.jpg" alt="" srcset="">
             </div>
         </div>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quasi iste maiores earum! Quae quia eveniet sapiente rem officia consectetur ut aspernatur dolores porro. Eligendi omnis aliquam harum quasi aliquid!
+            Enjoy our savoury pizzas!
         </p>
     </div>
 <!-- Make an order section -->
     <div class="container" id="ordernow">
-        <h1 id="title">Order Now</h1>
+        <h1 class="title">Order Now</h1>
         <form class="form-group" id="select-pizza">
             <div class="row">
-                <div class="col-md-6 col-sm-12 m-4 p-0">
+                <div class="col-lg-12 col-sm-12 m-4 p-0">
                     <div class="card p-4">
                         <label for="select">Select flavour</label>
                         <select name="" id="flavour">
@@ -124,37 +122,43 @@
                         </select>
                             <br>
                         <label for="number">How many pizzas would you like to order?</label>
-                        <input type="number" class="form-control" placeholder="Enter number" min="1" id="pizzanumber">     
+                        <input type="number" class="form-control" placeholder="Enter number" min="1" id="pizzanumber">  
+            </div>   
         </form><br>
                     <div>
                         <button type="submit" class="btn  btn-outline-success" id="checkout">Checkout</button>
                     </div><br>
-                    <div class="summary">
+                    <!-- <div class="summary">
                         <p>Your total amount is: <span id="total-amount"></span></p>
                         <h6>Thank you. Please let us know if you are satisfied with the services</h6>
                     </div>
                     <div class="card-text mt-3">
                         <h4>If you would like your pizza delivered, please enter your details below. Delivery cost is<strong> Ksh. 150.</strong></h4>              
-                    </div>
+                    </div> -->
                 </div>
             </div>
-    
-            <div class="col-md-6 col-sm-12">
-                <div class="card p-4 mb-5">
-                    <form class="form-group">
+        <h1 class="title">Delivery Details</h1>
+        <form class="form-group"></form>
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <div class="card p-4 mb-3">                  
                         <label for="name">Name</label>
                         <input type="text" placeholder="Name..." class="form-control">
                         <label for="number">Phone Number</label>
                         <input type="number" placeholder="07xxxxx..." class="form-control">
                         <label for="location">Location</label>
                         <input type="text" placeholder="Location..." class="form-control">               
-                    </form>
-                    <br>
-                    <div>
-                        <button type="submit" class="btn  btn-outline-success">Deliver</button>
                     </div>
                 </div>
             </div>
+        </form>
+            <div class="btn mb-3">
+                <button type="submit" class="btn  btn-outline-success">Deliver</button>
+            </div>
+                    
+                 
+            
+            
         </div>   
     </div>
 <!--Footer & copyright -->
