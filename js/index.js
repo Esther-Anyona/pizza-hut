@@ -10,21 +10,21 @@ $(document).ready(function(){
         localStorage.setItem('total', total);
     });
 
-// $(document).ready(function(){
-//     $('#delivery').change(function(){
-//         var delivery = $(this).val();
-//         var deliveryCost;
-//   if (delivery =="No"){
-//     $('#location-form').hide();
-//      deliveryCost = 0;
-//   } else {
-//     $('#location-form').show();
-//      deliveryCost = 150;
-//   }
-//   localStorage.setItem('deliveryCost', deliveryCost);
-//     });
-// });   
-// });
+$(document).ready(function(){
+    $('#delivery').change(function(){
+        var delivery = $(this).val();
+        var deliveryCost;
+  if (delivery =="No"){
+    $('#location-form').hide();
+     deliveryCost = 0;
+  } else {
+    $('#location-form').show();
+     deliveryCost = 150;
+  }
+  localStorage.setItem('deliveryCost', deliveryCost);
+    });
+});   
+});
 
 // $(document).ready(function(){
 //     $('#pizza-quantity').change(function(){
