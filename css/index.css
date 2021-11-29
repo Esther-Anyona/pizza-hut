@@ -1,10 +1,3 @@
-/* .header{
-    background-image: url(../assets/cheese3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 600px;
-    width: 100%;
-} */
 
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&display=swap" rel="stylesheet");
 
@@ -17,23 +10,7 @@
     text-transform: capitalize;
     transition: .2s linear;
 }
-/* html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-padding-top: 9rem;
-    scroll-behavior: smooth;
-}
-html::-webkit-scrollbar{
-    width: .8rem;
 
-}
-html::-webkit-scrollbar-track{
-    background: transparent;  
-}
-html::-webkit-scrollbar-thumb{
-    background: white;
-    border-radius: 5rem; 
-} */
 .header{
     background: #010103;
     display: flex;
@@ -45,9 +22,7 @@ html::-webkit-scrollbar-thumb{
     top: 0; left: 0; right: 0;
     z-index: 1;
 }
-.header .logo img{
-    height: 6rem;
-}
+
 .header .navbar a{
     margin: 0 1rem;
     font-size: 1.6rem;
@@ -60,11 +35,11 @@ html::-webkit-scrollbar-thumb{
 }
 
 .logo{
-    height: 6rem;
+    height: 4rem;
 }
-/* .header, #order{
-    background-color: black;
-} */
+em{
+    color: blue;
+}
 #about,#pizza, footer{
     background-color: #bd7927;
 }
