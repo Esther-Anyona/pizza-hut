@@ -1,5 +1,7 @@
-/* *{
+.header{
     background-image: url(../assets/cheese3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-} */
+    height: 600px;
+    width: 100%;
+}
