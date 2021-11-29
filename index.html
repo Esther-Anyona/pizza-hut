@@ -79,7 +79,7 @@
         <div class="row">
             <div class="col-md-6 m-4 p-0">
                 <div class="card p-4">
-                        <label for="">Select flavour</label>
+                        <label for="select">Select flavour</label>
                         <select name="" id="">
                             <option value="Chicken Peri-Peri">Chicken Peri-Peri</option>
                             <option value="BBQ Chicken">BBQ Chicken</option>
@@ -91,40 +91,40 @@
                             <option value="Chicken & Beef">Chicken & Beef</option>
                         </select>
                         <br>
-                        <label for="">Select pizza size</label>
+                        <label for="select">Select pizza size</label>
                         <select name="" id="">
-                            <option value="Small">Small @Ksh.500</option>
-                            <option value="Medium">Medium @Ksh.800</option>
-                            <option value="Large">Large @Ksh.1050</option>
-                            <option value="Mega">Mega @Ksh.1300</option>
+                            <option value="small">Small @Ksh.500</option>
+                            <option value="medium">Medium @Ksh.800</option>
+                            <option value="large">Large @Ksh.1050</option>
+                            <option value="mega">Mega @Ksh.1300</option>
                         </select>
                         <br>
-                        <label for="">Select crust</label>
+                        <label for="select">Select crust</label>
                         <select name="" id="">
-                            <option value="Crispy">Crispy @Ksh.100</option>
-                            <option value="Cheese Stuffed">Cheese Stuffed @Ksh.150</option>
-                            <option value="Flatbread">Flatbread @Ksh.120</option>
-                            <option value="Deep Dish">Deep Dish @Ksh.150</option>
-                            <option value="Glutten-Free">Glutten-Free @Ksh.200</option>
+                            <option value="crispy">Crispy @Ksh.100</option>
+                            <option value="cheese stuffed">Cheese Stuffed @Ksh.150</option>
+                            <option value="flatbread">Flatbread @Ksh.120</option>
+                            <option value="deep dish">Deep Dish @Ksh.150</option>
+                            <option value="glutten-free">Glutten-Free @Ksh.200</option>
                         </select>
                         <br>
-                        <label for="">Select preferred topping</label>
+                        <label for="select">Select preferred topping</label>
                         <select name="" id="">
-                            <option value="Pepperoni">Pepperoni</option>
-                            <option value="Barbeque Sauce">Barbeque Sauce</option>
-                            <option value="Sliced Mushroom">Sliced Mushroom</option>
-                            <option value="Extra Cheese">Extra Cheese</option>
-                            <option value="Pineapple">Pineapple</option>
-                            <option value="Bacon Strips">Bacon Strips</option>
-                            <option value="Sausage">Sausage</option>
+                            <option value="Pepperoni">Pepperoni @Ksh.100</option>
+                            <option value="Barbeque Sauce">Barbeque Sauce @Ksh.120</option>
+                            <option value="Sliced Mushroom">Sliced Mushroom @Ksh.120</option>
+                            <option value="Extra Cheese">Extra Cheese @Ksh.90</option>
+                            <option value="Pineapple">Pineapple @Ksh.60</option>
+                            <option value="Bacon Strips">Bacon Strips @Ksh.120</option>
+                            <option value="Sausage">Sausage @Ksh.100</option>
                         </select>
                         <br>
                         <label for="number">How many pizzas would you like to order?</label>
                         <input type="number" class="form-control" placeholder="No.of pizzas" min="1" id="pizzanumber">
         </div>
     </form>
-                <div class="card-text mt-3">
-                    <p><em>All toppings come at an extra cost of Ksh.100</em></p>              
+                <div>
+                    <button type="submit" class="btn  btn-outline-success">Checkout</button>
                 </div>
                 <div class="card-text mt-3">
                     <h4>If you would like your pizza delivered, please enter your details below. Delivery cost is<strong> Ksh. 150.</strong></h4>              
@@ -142,6 +142,10 @@
                     <label for="location">Location</label>
                     <input type="text" placeholder="Location..." class="form-control">               
                 </form>
+                <br>
+                <div>
+                    <button type="submit" class="btn  btn-outline-success">Deliver</button>
+                </div>
             </div>
         </div>
     </div>
