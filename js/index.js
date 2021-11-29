@@ -12,7 +12,7 @@ class pizzaOrder{
     }
 }
 
-pizzaOrder.prototype.amount = function(){
+pizzaOrder.prototype.cost = function(){
     if (this.size ==="small"){
         this.amount +=500;
     } else if (this.size ==="medium"){
@@ -52,8 +52,16 @@ pizzaOrder.prototype.amount = function(){
     } 
 };
 
-pizzaOrder.prototype.totalAmount = function(){
-    let totalPrice = 
-    }
-    return totalPrice;
-}
+$('form#select-pizza').submit(function(event){
+    event.preventDefault();
+    let favour = $('select#flavour').val();
+    let size = $('select#size').val();
+    let crust = $('select#crust').val();
+    let topping = $('select#topping').val();
+    let pizzaSelected = (size + ":" + crust + ":" + topping);
+    let newOrder = new pizzaOrder(size, crust, topping);
+    newOrder.cost();
+    totalPriceArray.push(newOrder.amount);
+    
+
+})
