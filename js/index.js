@@ -26,12 +26,12 @@ $(document).ready(function(){
 });   
 });
 
-// $(document).ready(function(){
-//     $('#pizza-quantity').change(function(){
-//        var quantity = $(this).val();
-//        localStorage.setItem('quantity', quantity);
-//     });
-// })
+$(document).ready(function(){
+    $('#pizza-quantity').change(function(){
+       var quantity = $(this).val();
+       localStorage.setItem('quantity', quantity);
+    });
+})
 
 // $(document).ready(function(){
 //     $('#deliver').click(function(){
