@@ -41,7 +41,9 @@
             </div>
         </nav>
     </header>
-    
+    <div class="bg-img">
+            
+    </div>
 
     <!-- About section -->
     <div class="container-fluid text-center" id="about" >
@@ -64,6 +66,9 @@
                 <img class="display" src="assets/cheese3.jpg" alt="" srcset="">
             </div>
             <div class="col">
+                <img class="display" src="assets/pizza3.jpg" alt="" srcset="">
+            </div>
+            <div class="col">
                 <img class="display" src="assets/cheese2.jpg" alt="" srcset="">
             </div>
             <div class="col">
@@ -82,7 +87,7 @@
                 <div class="col-lg-12 col-sm-12 m-4 p-0">
                     <div class="card p-4">
                         <label for="select">Select flavour</label>
-                        <select name="" id="flavour">
+                        <select class="custom-select" id="flavour">
                             <option value="Chicken Peri-Peri">Chicken Peri-Peri</option>
                             <option value="BBQ Chicken">BBQ Chicken</option>
                             <option value="Hawaiian">Hawaiian</option>
@@ -94,7 +99,7 @@
                         </select>
                             <br>
                         <label for="select">Select pizza size</label>
-                        <select name="" id="size">
+                        <select class="custom-select" id="size">
                             <option value="small">Small @Ksh.500</option>
                             <option value="medium">Medium @Ksh.800</option>
                             <option value="large">Large @Ksh.1050</option>
@@ -102,7 +107,7 @@
                         </select>
                             <br>
                         <label for="select">Select crust</label>
-                        <select name="" id="crust">
+                        <select class="custom-select" id="crust">
                             <option value="crispy">Crispy @Ksh.100</option>
                             <option value="cheese stuffed">Cheese Stuffed @Ksh.150</option>
                             <option value="flatbread">Flatbread @Ksh.120</option>
@@ -110,16 +115,28 @@
                             <option value="glutten-free">Glutten-Free @Ksh.200</option>
                         </select>
                             <br>
+                        <label>All toppings come at an extra cost of <strong>Ksh.80 each</strong></label>
                         <label for="select">Select preferred topping</label>
-                        <select name="" id="topping">
-                            <option value="Pepperoni">Pepperoni @Ksh.100</option>
-                            <option value="Barbeque Sauce">Barbeque Sauce @Ksh.120</option>
-                            <option value="Sliced Mushroom">Sliced Mushroom @Ksh.120</option>
-                            <option value="Extra Cheese">Extra Cheese @Ksh.90</option>
-                            <option value="Pineapple">Pineapple @Ksh.60</option>
-                            <option value="Bacon Strips">Bacon Strips @Ksh.120</option>
-                            <option value="Sausage">Sausage @Ksh.100</option>
-                        </select>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                          <input type="checkbox" class="custom-control-input" id="Pepperoni" value="Pepperoni" name="toppings">
+                          <label class="custom-control-label" for="Pepperoni">Pepperoni</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                          <input type="checkbox" class="custom-control-input" id="Barbeque Sauce" value="Barbeque Sauce" name="toppings">
+                          <label class="custom-control-label" for="Barbeque Sauce">Barbeque Sauce</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                          <input type="checkbox" class="custom-control-input" id="Sliced Mushrooms" value="Sliced Mushrooms" name="toppings">
+                          <label class="custom-control-label" for="Sliced Mushrooms">Sliced Mushrooms</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="Pineapple" value="Pineapple" name="toppings">
+                            <label class="custom-control-label" for="Pineapple">Pineapple</label>
+                          </div>
+                          <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="Extra Cheese" value="Extra Cheese" name="toppings">
+                            <label class="custom-control-label" for="Extra Cheese">Extra Cheese</label>
+                          </div>
                             <br>
                         <label for="number">How many pizzas would you like to order?</label>
                         <input type="number" class="form-control" placeholder="Enter number" min="1" id="pizzanumber">  
