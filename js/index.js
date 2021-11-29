@@ -52,6 +52,15 @@ pizzaOrder.prototype.cost = function(){
     } 
 };
 
+pizzaOrder.prototype.totalAmount = function(){
+    let totalOrderAmount = [];
+    for (let arrayElement = 0; arrayElement<orderAmountArray.length; arrayElement++){
+        totalOrderAmount += orderAmountArray[arrayElement];
+    }
+    return totalOrderAmount;
+}
+$('#checkout').click(function(){   
+});
 $('form#select-pizza').submit(function(event){
     event.preventDefault();
     let favour = $('select#flavour').val();
@@ -62,6 +71,6 @@ $('form#select-pizza').submit(function(event){
     let newOrder = new pizzaOrder(size, crust, topping);
     newOrder.cost();
     totalPriceArray.push(newOrder.amount);
-    
-
-})
+    $('#total-amount').text(newOrder.totalAmount());
+    $('.summary').append(('<p></p>' + pizzaSelected + '<p></p>'));
+});
