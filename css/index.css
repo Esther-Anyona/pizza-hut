@@ -5,3 +5,15 @@
     height: 600px;
     width: 100%;
 } */
+.logo{
+    height: 6rem;
+}
+.header, #order{
+    background-color: black;
+}
+#about,#pizza{
+    background-color: burlywood;
+}
+#order .row{
+    color: burlywood;
+}
