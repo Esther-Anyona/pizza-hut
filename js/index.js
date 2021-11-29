@@ -31,18 +31,18 @@ $(document).ready(function(){
        var quantity = $(this).val();
        localStorage.setItem('quantity', quantity);
     });
-})
+});
 
-// $(document).ready(function(){
-//     $('#deliver').click(function(){
-//         var totalQuantity = parseInt(localStorage.getItem('quantity'));
-//         var totalAmount = parseInt(localStorage.getItem('total'));
-//         var totalDelivery = parseInt(localStorage.getItem('deliveryCost'));
-//         if (totalDelivery){
-//             var totalPrice = (totalAmount * totalQuantity) + totalDelivery;
-//         } else {
-//         var totalPrice = (totalAmount * totalQuantity) + totalDelivery ;
-//         }
-//         alert(totalPrice);
-//     })
-// })
+$(document).ready(function(){
+    $('#deliver').click(function(){
+        var totalQuantity = parseInt(localStorage.getItem('quantity'));
+        var totalAmount = parseInt(localStorage.getItem('total'));
+        var totalDelivery = parseInt(localStorage.getItem('deliveryCost'));
+        if (totalDelivery){
+            var totalPrice = (totalAmount * totalQuantity) + totalDelivery;
+        } else {
+        var totalPrice = (totalAmount * totalQuantity) + totalDelivery ;
+        }
+        alert(totalPrice);
+    });
+});
