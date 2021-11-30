@@ -3,10 +3,6 @@
 -------------
 ### Casa Della Pizza (House of Pizza)
 
-
-
-![](...........)
-
 -------------
 ## Table of Contents 
 
@@ -26,7 +22,7 @@
 ## Setup Instructions
 
 * On my GitHub account https://github.com/Esther-Anyona/pizza-hut, fork a copy to your account. This can be accessed by anyone with a computer, smart phone, tablet, Ipad 
-* For the live link, one will require an internet connection to access. The link is ...................
+* For the live link, one will require an internet connection to access. The link is https://esther-anyona.github.io/pizza-hut/
 
 -----------
 ## BDD
