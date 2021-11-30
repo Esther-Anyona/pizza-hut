@@ -42,9 +42,8 @@
         </nav>
     </header>
     <div class="bg-img">
-            
+       <h1 id="txt">At Casa Della Pizza, we gotcha!</h1>     
     </div>
-
     <!-- About section -->
     <div class="container-fluid text-center" id="about" >
         <h1>About Us</h1>
@@ -56,9 +55,8 @@
             At <em>Casa Della Pizza</em>, we have perfected the art of pizza baking. The pizzas are delicious and leave one craving for more. 
         </p>
     </div>
-
     <!-- Our Pizza Section -->
-    <div class="container-fluid"  id="pizza">
+    <div class="container-fluid" class="pizza" id="pizza">
         <h1 >Our Pizza</h1>
         <h3><em>Cheesed to perfection!</em></h3>
         <div class="row">
@@ -76,7 +74,7 @@
             </div>
         </div>
         <p>
-            Enjoy our savoury pizzas!
+            <em>Enjoy our savoury pizzas!</em>
         </p>
     </div>
 <!-- Make an order section -->
@@ -113,8 +111,7 @@
                             <option value="120">Flatbread @Ksh.120</option>
                             <option value="150">Deep Dish @Ksh.150</option>
                             <option value="200">Glutten-Free @Ksh.200</option>
-                        </select>
-                            <br>
+                        </select><br>                          
                         <label>All toppings come at an extra cost of <strong>Ksh.80 each</strong></label>
                         <label for="select">Select preferred topping</label>
                         <div class="custom-control custom-checkbox custom-control-inline">
@@ -131,20 +128,19 @@
                         </div><br>
                         <label for="number">How many pizzas would you like to order?</label>
                         <input type="number" id="pizza-quantity" class="form-control" placeholder="Enter number" min="1" id="pizzanumber">  
-            </div>   
+                    </div>   
         </form><br>
-                    <div>
-                        <button type="submit" class="btn  btn-outline-success" id="checkout">Checkout</button>
-                    </div><br>
+            <div>
+                <button type="submit" class="btn  btn-outline-success" id="checkout">Checkout</button>
+            </div><br>
                 </div>
-            </div>
-            
+            </div>     
         <h1 class="title">Delivery Details</h1>
         <label>Delivery cost is <strong>Ksh.150.</strong> Would you like a delivery?</label><br>
         <select name="delivery" id="delivery">
             <option value="No">No</option>
             <option value="Yes">Yes</option>
-        </select>
+        </select><br><br>
         <form class="form-group" id="location-form">
             <div class="row">
                 <div class="col-lg-12 col-sm-12">
@@ -161,13 +157,10 @@
         </form>
             <div class="btn mb-3">
                 <button type="submit" class="btn  btn-outline-success" id="deliver">Order</button>
-            </div>
-                    
-                 
-            
-            
+            </div>         
         </div>   
     </div>
+
 <!--Footer & copyright -->
     <footer>
         <div class="social" id="contact">
@@ -176,10 +169,8 @@
             <img src="assets/you_tube.png" alt="" >
         </div>
         <div class="copyright">
-            <h6><em>CASA DELLA PIZZA &#169 2021</em></h6>
+            <h6>Casa Della Pizza &#169 2021</h6>
         </div>
     </footer>
-
-   
 </body>
 </html>
